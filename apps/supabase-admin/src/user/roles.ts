@@ -23,4 +23,8 @@ export const ROLES = [
     name: "supportUser",
     displayName: "SupportUser",
   },
+  {
+    name: "user",
+    displayName: "user",
+  },
 ];

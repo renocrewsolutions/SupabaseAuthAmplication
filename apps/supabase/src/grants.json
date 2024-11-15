@@ -36,6 +36,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "User",
     "action": "create:any",
@@ -72,6 +78,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "User",
     "action": "update:any",
@@ -108,6 +120,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "User",
     "action": "delete:any",
@@ -144,6 +162,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "User",
     "action": "read:any",
@@ -180,6 +204,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Proposal",
     "action": "read:own",
@@ -216,6 +246,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Proposal",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Proposal",
     "action": "create:any",
@@ -252,6 +288,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Proposal",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Proposal",
     "action": "update:any",
@@ -288,6 +330,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Proposal",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Proposal",
     "action": "delete:any",
@@ -324,6 +372,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Proposal",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Proposal",
     "action": "read:any",
@@ -355,6 +409,12 @@
   },
   {
     "role": "supportUser",
+    "resource": "Proposal",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
     "resource": "Proposal",
     "action": "read:any",
     "attributes": "*"
@@ -396,6 +456,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Job",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Job",
     "action": "create:any",
@@ -432,6 +498,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Job",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Job",
     "action": "update:any",
@@ -468,6 +540,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Job",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Job",
     "action": "delete:any",
@@ -504,6 +582,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Job",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Job",
     "action": "read:any",
@@ -535,6 +619,12 @@
   },
   {
     "role": "supportUser",
+    "resource": "Job",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
     "resource": "Job",
     "action": "read:any",
     "attributes": "*"
@@ -576,6 +666,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Freelancer",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Freelancer",
     "action": "create:any",
@@ -612,6 +708,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Freelancer",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Freelancer",
     "action": "update:any",
@@ -648,6 +750,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Freelancer",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Freelancer",
     "action": "delete:any",
@@ -684,6 +792,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Freelancer",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Freelancer",
     "action": "read:any",
@@ -715,6 +829,12 @@
   },
   {
     "role": "supportUser",
+    "resource": "Freelancer",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
     "resource": "Freelancer",
     "action": "read:any",
     "attributes": "*"
@@ -756,6 +876,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Client",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Client",
     "action": "create:any",
@@ -792,6 +918,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Client",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Client",
     "action": "update:any",
@@ -828,6 +960,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Client",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Client",
     "action": "delete:any",
@@ -864,6 +1002,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Client",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Client",
     "action": "read:any",
@@ -895,6 +1039,12 @@
   },
   {
     "role": "supportUser",
+    "resource": "Client",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
     "resource": "Client",
     "action": "read:any",
     "attributes": "*"
@@ -936,6 +1086,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Payment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Payment",
     "action": "create:any",
@@ -972,6 +1128,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Payment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Payment",
     "action": "update:any",
@@ -1008,6 +1170,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Payment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Payment",
     "action": "delete:any",
@@ -1044,6 +1212,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Payment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Payment",
     "action": "read:any",
@@ -1075,6 +1249,12 @@
   },
   {
     "role": "supportUser",
+    "resource": "Payment",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
     "resource": "Payment",
     "action": "read:any",
     "attributes": "*"
@@ -1116,6 +1296,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Contract",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Contract",
     "action": "create:any",
@@ -1152,6 +1338,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Contract",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Contract",
     "action": "update:any",
@@ -1188,6 +1380,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Contract",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Contract",
     "action": "delete:any",
@@ -1224,6 +1422,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Contract",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Contract",
     "action": "read:any",
@@ -1255,6 +1459,12 @@
   },
   {
     "role": "supportUser",
+    "resource": "Contract",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
     "resource": "Contract",
     "action": "read:any",
     "attributes": "*"
@@ -1296,6 +1506,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Message",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Message",
     "action": "create:any",
@@ -1332,6 +1548,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Message",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Message",
     "action": "update:any",
@@ -1368,6 +1590,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Message",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Message",
     "action": "delete:any",
@@ -1404,6 +1632,12 @@
     "attributes": "*"
   },
   {
+    "role": "user",
+    "resource": "Message",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
     "role": "admin",
     "resource": "Message",
     "action": "read:any",
@@ -1435,6 +1669,12 @@
   },
   {
     "role": "supportUser",
+    "resource": "Message",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
     "resource": "Message",
     "action": "read:any",
     "attributes": "*"
