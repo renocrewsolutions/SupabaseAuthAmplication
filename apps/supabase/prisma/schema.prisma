@@ -1,0 +1,107 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  createdAt DateTime @default(now())
+  email     String?  @unique
+  firstName String?
+  id        String   @id @default(cuid())
+  lastName  String?
+  password  String
+  roles     Json
+  updatedAt DateTime @updatedAt
+  username  String   @unique
+}
+
+model Proposal {
+  coverLetter  String?
+  createdAt    DateTime    @default(now())
+  freelancer   Freelancer? @relation(fields: [freelancerId], references: [id])
+  freelancerId String?
+  id           String      @id @default(cuid())
+  job          Job?        @relation(fields: [jobId], references: [id])
+  jobId        String?
+  rate         Float?
+  updatedAt    DateTime    @updatedAt
+}
+
+model Job {
+  budget      Float?
+  client      Client?    @relation(fields: [clientId], references: [id])
+  clientId    String?
+  createdAt   DateTime   @default(now())
+  deadline    DateTime?
+  description String?
+  id          String     @id @default(cuid())
+  proposals   Proposal[]
+  title       String?
+  updatedAt   DateTime   @updatedAt
+}
+
+model Client {
+  budget       Float?
+  contracts    Contract[]
+  createdAt    DateTime     @default(now())
+  email        String?
+  freelancer   Freelancer?  @relation(name: "ClientsOnFreelancer", fields: [freelancerId], references: [id])
+  freelancerId String?
+  freelancers  Freelancer[] @relation(name: "ClientOnFreelancers")
+  id           String       @id @default(cuid())
+  jobs         Job[]
+  name         String?
+  updatedAt    DateTime     @updatedAt
+}
+
+model Freelancer {
+  client    Client?    @relation(name: "ClientOnFreelancers", fields: [clientId], references: [id])
+  clientId  String?
+  clients   Client[]   @relation(name: "ClientsOnFreelancer")
+  contracts Contract[]
+  createdAt DateTime   @default(now())
+  email     String?
+  id        String     @id @default(cuid())
+  name      String?
+  proposals Proposal[]
+  skills    String?
+  updatedAt DateTime   @updatedAt
+}
+
+model Payment {
+  amount     Float?
+  contract   Contract? @relation(fields: [contractId], references: [id])
+  contractId String?
+  createdAt  DateTime  @default(now())
+  date       DateTime?
+  id         String    @id @default(cuid())
+  updatedAt  DateTime  @updatedAt
+}
+
+model Contract {
+  charges      Float?
+  client       Client?     @relation(fields: [clientId], references: [id])
+  clientId     String?
+  createdAt    DateTime    @default(now())
+  endDate      DateTime?
+  freelancer   Freelancer? @relation(fields: [freelancerId], references: [id])
+  freelancerId String?
+  id           String      @id @default(cuid())
+  payments     Payment[]
+  startDate    DateTime?
+  updatedAt    DateTime    @updatedAt
+}
+
+model Message {
+  content   String?
+  createdAt DateTime  @default(now())
+  id        String    @id @default(cuid())
+  receiver  String?
+  sender    String?
+  sentAt    DateTime?
+  updatedAt DateTime  @updatedAt
+}
