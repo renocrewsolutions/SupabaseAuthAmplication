@@ -11,7 +11,7 @@ model User {
   createdAt DateTime @default(now())
   email     String?  @unique
   firstName String?
-  id        String   @id @default(cuid())
+  id        String   @id @default(uuid())
   lastName  String?
   password  String
   roles     Json
@@ -24,7 +24,7 @@ model Proposal {
   createdAt    DateTime    @default(now())
   freelancer   Freelancer? @relation(fields: [freelancerId], references: [id])
   freelancerId String?
-  id           String      @id @default(cuid())
+  id           String      @id @default(uuid())
   job          Job?        @relation(fields: [jobId], references: [id])
   jobId        String?
   rate         Float?
@@ -38,10 +38,24 @@ model Job {
   createdAt   DateTime   @default(now())
   deadline    DateTime?
   description String?
-  id          String     @id @default(cuid())
+  id          String     @id @default(uuid())
   proposals   Proposal[]
   title       String?
   updatedAt   DateTime   @updatedAt
+}
+
+model Freelancer {
+  client    Client?    @relation(name: "ClientOnFreelancers", fields: [clientId], references: [id])
+  clientId  String?
+  clients   Client[]   @relation(name: "ClientsOnFreelancer")
+  contracts Contract[]
+  createdAt DateTime   @default(now())
+  email     String?
+  id        String     @id @default(uuid())
+  name      String?
+  proposals Proposal[]
+  skills    String?
+  updatedAt DateTime   @updatedAt
 }
 
 model Client {
@@ -52,24 +66,10 @@ model Client {
   freelancer   Freelancer?  @relation(name: "ClientsOnFreelancer", fields: [freelancerId], references: [id])
   freelancerId String?
   freelancers  Freelancer[] @relation(name: "ClientOnFreelancers")
-  id           String       @id @default(cuid())
+  id           String       @id @default(uuid())
   jobs         Job[]
   name         String?
   updatedAt    DateTime     @updatedAt
-}
-
-model Freelancer {
-  client    Client?    @relation(name: "ClientOnFreelancers", fields: [clientId], references: [id])
-  clientId  String?
-  clients   Client[]   @relation(name: "ClientsOnFreelancer")
-  contracts Contract[]
-  createdAt DateTime   @default(now())
-  email     String?
-  id        String     @id @default(cuid())
-  name      String?
-  proposals Proposal[]
-  skills    String?
-  updatedAt DateTime   @updatedAt
 }
 
 model Payment {
@@ -78,7 +78,7 @@ model Payment {
   contractId String?
   createdAt  DateTime  @default(now())
   date       DateTime?
-  id         String    @id @default(cuid())
+  id         String    @id @default(uuid())
   updatedAt  DateTime  @updatedAt
 }
 
@@ -90,7 +90,7 @@ model Contract {
   endDate      DateTime?
   freelancer   Freelancer? @relation(fields: [freelancerId], references: [id])
   freelancerId String?
-  id           String      @id @default(cuid())
+  id           String      @id @default(uuid())
   payments     Payment[]
   startDate    DateTime?
   updatedAt    DateTime    @updatedAt
@@ -99,7 +99,7 @@ model Contract {
 model Message {
   content   String?
   createdAt DateTime  @default(now())
-  id        String    @id @default(cuid())
+  id        String    @id @default(uuid())
   receiver  String?
   sender    String?
   sentAt    DateTime?

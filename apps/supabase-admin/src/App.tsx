@@ -17,14 +17,14 @@ import { JobList } from "./job/JobList";
 import { JobCreate } from "./job/JobCreate";
 import { JobEdit } from "./job/JobEdit";
 import { JobShow } from "./job/JobShow";
-import { ClientList } from "./client/ClientList";
-import { ClientCreate } from "./client/ClientCreate";
-import { ClientEdit } from "./client/ClientEdit";
-import { ClientShow } from "./client/ClientShow";
 import { FreelancerList } from "./freelancer/FreelancerList";
 import { FreelancerCreate } from "./freelancer/FreelancerCreate";
 import { FreelancerEdit } from "./freelancer/FreelancerEdit";
 import { FreelancerShow } from "./freelancer/FreelancerShow";
+import { ClientList } from "./client/ClientList";
+import { ClientCreate } from "./client/ClientCreate";
+import { ClientEdit } from "./client/ClientEdit";
+import { ClientShow } from "./client/ClientShow";
 import { PaymentList } from "./payment/PaymentList";
 import { PaymentCreate } from "./payment/PaymentCreate";
 import { PaymentEdit } from "./payment/PaymentEdit";
@@ -72,18 +72,18 @@ const App = (): React.ReactElement => {
           show={JobShow}
         />
         <Resource
-          name="Client"
-          list={ClientList}
-          edit={ClientEdit}
-          create={ClientCreate}
-          show={ClientShow}
-        />
-        <Resource
           name="Freelancer"
           list={FreelancerList}
           edit={FreelancerEdit}
           create={FreelancerCreate}
           show={FreelancerShow}
+        />
+        <Resource
+          name="Client"
+          list={ClientList}
+          edit={ClientEdit}
+          create={ClientCreate}
+          show={ClientShow}
         />
         <Resource
           name="Payment"

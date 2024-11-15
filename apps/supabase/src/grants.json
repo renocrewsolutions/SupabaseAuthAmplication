@@ -541,186 +541,6 @@
   },
   {
     "role": "admin",
-    "resource": "Client",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "client",
-    "resource": "Client",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "freelancer",
-    "resource": "Client",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "moderator",
-    "resource": "Client",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "SuperAdmin",
-    "resource": "Client",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "supportUser",
-    "resource": "Client",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "Client",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "client",
-    "resource": "Client",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "freelancer",
-    "resource": "Client",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "moderator",
-    "resource": "Client",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "SuperAdmin",
-    "resource": "Client",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "supportUser",
-    "resource": "Client",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "Client",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "client",
-    "resource": "Client",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "freelancer",
-    "resource": "Client",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "moderator",
-    "resource": "Client",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "SuperAdmin",
-    "resource": "Client",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "supportUser",
-    "resource": "Client",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "Client",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "client",
-    "resource": "Client",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "freelancer",
-    "resource": "Client",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "moderator",
-    "resource": "Client",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "SuperAdmin",
-    "resource": "Client",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "supportUser",
-    "resource": "Client",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
-    "resource": "Client",
-    "action": "read:any",
-    "attributes": "*"
-  },
-  {
-    "role": "client",
-    "resource": "Client",
-    "action": "read:any",
-    "attributes": "*"
-  },
-  {
-    "role": "freelancer",
-    "resource": "Client",
-    "action": "read:any",
-    "attributes": "*"
-  },
-  {
-    "role": "moderator",
-    "resource": "Client",
-    "action": "read:any",
-    "attributes": "*"
-  },
-  {
-    "role": "SuperAdmin",
-    "resource": "Client",
-    "action": "read:any",
-    "attributes": "*"
-  },
-  {
-    "role": "supportUser",
-    "resource": "Client",
-    "action": "read:any",
-    "attributes": "*"
-  },
-  {
-    "role": "admin",
     "resource": "Freelancer",
     "action": "read:own",
     "attributes": "*"
@@ -896,6 +716,186 @@
   {
     "role": "supportUser",
     "resource": "Freelancer",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Client",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "client",
+    "resource": "Client",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "freelancer",
+    "resource": "Client",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Client",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "SuperAdmin",
+    "resource": "Client",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "supportUser",
+    "resource": "Client",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Client",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "client",
+    "resource": "Client",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "freelancer",
+    "resource": "Client",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Client",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "SuperAdmin",
+    "resource": "Client",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "supportUser",
+    "resource": "Client",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Client",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "client",
+    "resource": "Client",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "freelancer",
+    "resource": "Client",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Client",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "SuperAdmin",
+    "resource": "Client",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "supportUser",
+    "resource": "Client",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Client",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "client",
+    "resource": "Client",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "freelancer",
+    "resource": "Client",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Client",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "SuperAdmin",
+    "resource": "Client",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "supportUser",
+    "resource": "Client",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Client",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "client",
+    "resource": "Client",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "freelancer",
+    "resource": "Client",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "moderator",
+    "resource": "Client",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "SuperAdmin",
+    "resource": "Client",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "supportUser",
+    "resource": "Client",
     "action": "read:any",
     "attributes": "*"
   },
