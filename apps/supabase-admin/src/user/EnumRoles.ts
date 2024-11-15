@@ -5,4 +5,5 @@ export enum EnumRoles {
   Moderator = "moderator",
   SuperAdmin = "SuperAdmin",
   SupportUser = "supportUser",
+  User = "user",
 }
