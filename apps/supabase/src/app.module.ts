@@ -2,8 +2,8 @@ import { Module } from "@nestjs/common";
 import { UserModule } from "./user/user.module";
 import { ProposalModule } from "./proposal/proposal.module";
 import { JobModule } from "./job/job.module";
-import { ClientModule } from "./client/client.module";
 import { FreelancerModule } from "./freelancer/freelancer.module";
+import { ClientModule } from "./client/client.module";
 import { PaymentModule } from "./payment/payment.module";
 import { ContractModule } from "./contract/contract.module";
 import { MessageModule } from "./message/message.module";
@@ -27,8 +27,8 @@ import { AuthModule } from "./auth/auth.module";
     UserModule,
     ProposalModule,
     JobModule,
-    ClientModule,
     FreelancerModule,
+    ClientModule,
     PaymentModule,
     ContractModule,
     MessageModule,
